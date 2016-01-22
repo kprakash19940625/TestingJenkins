@@ -31,11 +31,4 @@ public class Main {
                 int output = test.generate();
                 assertTrue(1 < output);
         }
-        
-        @Test
-        public void test5(){
-                GenerateRandom test = new GenerateRandom();
-                int output = test.generate();
-                assertTrue(1 < output);
-        }
 }
