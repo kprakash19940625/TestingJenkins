@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="runJunittest" name="running java class using ant">
+<property name="build_dir" value="build"/>
+  <target name="compile">
+    <!--<mkdir dir="build"/>-->
+    <javac includeantruntime="false" classpath="src/junit-4.10.jar" srcdir="src" destdir="build"/>
+  </target>
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+  <target name="runJunittest" depends="compile">
+    <java classname = "TestRunner" classpath="${build_dir}" failonerror="yes">
+      <classpath>
+        <pathelement location="build/junit-4.10.jar"/>
+      </classpath>
+    </java>
+  </target>
+</project>
