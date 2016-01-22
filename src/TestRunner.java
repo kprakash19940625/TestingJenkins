@@ -15,7 +15,7 @@ public class TestRunner {
       if (failed>0) {
          System.out.println("Failed Cases : \n\t "+result.getFailures());
       }
-      if (failed>=3) {
+      if (failed>=5) {
         throw new EmptyStackException();
       }
    }
