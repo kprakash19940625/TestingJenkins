@@ -8,7 +8,7 @@ public class Main {
         public void test1() {
                 GenerateRandom test = new GenerateRandom();
                 int output = test.generate();
-                assertTrue(3 < output);
+                assertTrue(5 < output);
         }
         
         @Test
