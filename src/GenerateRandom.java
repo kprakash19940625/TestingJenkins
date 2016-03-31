@@ -7,5 +7,7 @@ public class GenerateRandom {
     return n;
   }
   */
+  public static void main(String args[]){
   System.out.println("Hai");
+  }
 }
